@@ -14,7 +14,7 @@ connectDB()
 const app = express()
 app.use(express.json())
 
-app.use('/api/products', courseRoutes)
+app.use('/api/courses', courseRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
 app.use('/api/uploads', uploadRoutes)
