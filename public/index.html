@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+  </head>
+  <style>
+    body {
+      background-color: #f8f5f1;
+      padding-left: 1.5rem;
+    }
+    p {
+      font-size: larger;
+    }
+    .number {
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+    span {
+      border-radius: 5%;
+      padding: 10px;
+      border: 1px gray solid;
+      background-color: #ddd;
+      color: #393e46;
+    }
+  </style>
+  <body>
+    <h2>Welcome to the API that can be used for online courses.</h2>
+    <h3>Here's a list of all routes:</h3>
+    <p>
+      A. FOR USERS:
+        <p class="number">1. <span>POST</span> on '/api/users/' to register user</p>
+        <p class="number">2. <span>GET</span> on '/api/users/' for admin to see user list</p>
+        <p class="number">3. <span>POST</span> on '/api/users/login' to login</p>
+        <p class="number">4. <span>GET</span> on '/api/users/profile' to get logged user profile</p>
+        <p class="number">5. <span>PUT</span> on '/api/users/profile' to update logged user profile</p>
+        <p class="number">6. <span>DELETE</span> on '/api/users/:id' for admins to delete a user</p>
+        <p class="number">7. <span>GET</span> on '/api/users/:id' for admins to a user profile</p>
+        <p class="number">8. <span>PUT</span> on '/api/users/:id' for admins to make a user an admin</p>
+        <p class="number">9. <span>PUT</span> on '/api/users/:id/educator' to make a user an educator</p>
+      <p>B. FOR ORDERS:</p>
+        <p class="number">1. <span>POST</span> on '/api/orders/' to addOrder</p>
+        <p class="number">2. <span>GET</span> on '/api/orders' fro admins to get all orders</p>
+        <p class="number">3. <span>GET</span> on '/api/orders/myorders' to get user orders passing the user id</p>
+        <p class="number">4. <span>GET</span> on '/api/orders/:id' to get an order with a certain id</p>
+        <p class="number">5. <span>PUT</span> on 'api/orders/:id/pay' to update the order to paid</p>
+      <p>C. FOR COURSES:</p>
+        <p class="number">1. <span>GET</span> on '/api/courses/' to get list of all courses</p>
+        <p class="number">2. <span>POST</span> on '/api/courses/' for educator to post a course</p>
+        <p class="number">3. <span>POST</span> on '/api/courses/:id/review' to post a review</p>
+        <p class="number">4. <span>GET</span> on '/api/courses/top' to get top courses</p>
+        <p class="number">5. <span>GET</span> on '/api/courses/:id' to get a specific course</p>
+        <p class="number">6. <span>DELETE</span> on '/api/courses/:id' for educator to delete a course</p>
+        <p class="number">7. <span>PUT</span> on '/api/courses/:id' for educator to update a course</p>
+        <p class="number">8. <span>DELETE</span> on '/api/courses/:id/:dir' for educator delete a subDirectory from a course</p>
+        <p class="number">9. <span>POST</span> on '/api/courses/:id/:dir' to add a subDirectory to a course</p>
+        <p class="number">10. <span>PUT</span> on '/api/courses/:id/:dir' to update a subDirectory in a cpurse</p>
+        <p class="number">11. <span>POST</span> on '/api/courses/:userId/cart' to add a course to a user's cart</p>
+        <p class="number">12. <span>POST</span> on '/api/courses/:userId/whishlist' to add a course to a user's whishlist</p>
+        <p class="number">13. <span>POST</span> on '/api/courses/:userId/learning' to add a course to a user's learning list</p>
+        <p class="number">14. <span>POST</span> on '/api/courses/:userId/courses' to add a course to a user's courses if he's an educator</p>
+      <p>D. FOR VIDEO UPLOAD:</p>
+        <p class="number">1. <span>POST</span> on '/api/uploads' containing the videos to upload</p>
+    </p>
+  </body>
+</html>
